@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+// @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 
 
 audio{
@@ -16,58 +16,36 @@ audio{
   border-radius: 15px;
   display: flex;
   align-items: center;
-  width:500px;
-  height:130px;
-  background: #000000;
+  width:50%;
+  height:40vh;
+  background: #fff;
 
-  .cover{
-    img{
-    max-width: 100px;
-    max-height: 100px;
-    margin-left: 10px;
-    border-radius: 50%;
-    }
-  }
 
-  .loader{
-    text-align: center;
-    color: #ffff;
-    margin: 0 auto;
-    position: relative;
-  }
-  .error{
-    text-align: center;
-    color: rgb(255, 55, 55);
-    margin: 0 auto;
-    position: relative;
-  }
   .container {
     padding: 5px;
     width: 100%;
-    .details {
-      text-align: center;
-      .title{
-        color: rgb(76, 130, 175);
-        margin: 7px 0 15px 0px;
+    display: flex;
+
+      .controls {
+        flex-direction: row;
+        background-color: #e9f0fe;
+        border-radius: 80px;
+        width:75px;
+        height:75px;
+
+        svg {
+          width: 25px;
+          height: 25px;
+          margin: 20px 25px;
+          cursor: pointer;
+          }
+        }
+      .details {
+        text-align: center;
+        width:60%
       }
+
     }
-
-    .controls {
-      display: flex;
-      justify-content: space-around;
-      margin-top: 8px;
-      flex-basis: auto;
-      flex-direction: row;
-      flex-wrap: wrap;
-
-      svg {
-        width: 25px;
-        height: 25px;
-        margin: 0 20px;
-        cursor: pointer;
-      }   
-    }
-
     .volume-container{
       position: relative;
       .volume-control {
@@ -83,33 +61,36 @@ audio{
       &:hover  {
         .volume-control{
          display: block;
-     } 
+     }
     }
     }
   }
-}
-
 .slidecontainer {
-  width: 100%;
+  width: 75%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 35px;
+  background-color: #ececec;
+  padding: 15px 0px;
+  margin: 8px;
 
   .time-line {
     display: flex;
     justify-content: space-between;
-    width: 87%;
+    width: 85%;
     margin: 7px 0 2px 0;
-    color: rgb(76, 130, 175);
+    color: #4f4f4f;
+    font-size: 20px;
   }
 }
 
 .slider {
   -webkit-appearance: none;
-  width: 87%;
+  width: 75%;
   height: 2px;
   border-radius: 5px;
-  background: #ffffff;
+  background: #4684f8;
   outline: none;
   opacity: 1;
   transition: opacity 0.2s;
@@ -122,7 +103,7 @@ audio{
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background: rgb(76, 130, 175);
+  background: #4684f8;
   cursor: pointer;
 }
 
@@ -130,7 +111,7 @@ audio{
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background: rgb(76, 130, 175);
+  background: #4684f8;
   cursor: pointer;
 }
 
